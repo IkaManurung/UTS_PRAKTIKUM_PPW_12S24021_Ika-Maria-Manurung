@@ -1,0 +1,24 @@
+{
+  "name": "ppw/uts-praktikum-ppw",
+  "type": "project",
+  "description": "DEL Lab Equipment & Asset Tracking System - DEL-LEATS",
+  "require": {
+    "php": "^8.1",
+    "laravel/framework": "^10.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist"
+  }
+}
